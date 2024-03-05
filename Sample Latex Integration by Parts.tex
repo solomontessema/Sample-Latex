@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+
+\begin{document}
+
+\title{Sample Latex: Proof of Integration by Parts in Multivariable Calculus}
+\author{Solomon Tessema}
+\date{03/04/2024}
+\maketitle
+
+\section*{Introduction}
+Integration by parts in multivariable calculus can be demonstrated using the divergence theorem, which relates the flux of a vector field through a surface to the divergence of the field inside the volume bounded by the surface.
+
+\section*{Theorem (Integration by Parts)}
+Let \(u\) and \(v\) be scalar functions defined on a domain \(D\) in \(\mathbb{R}^3\) with smooth boundary \(\partial D\), and let \(\mathbf{F}\) be a vector field on \(D\). If \(u, v, \) and \(\mathbf{F}\) are differentiable, then
+\[
+\int_{D} u \nabla \cdot (v\mathbf{F}) \, dV = \int_{\partial D} u v \mathbf{F} \cdot d\mathbf{S} - \int_{D} v \nabla u \cdot \mathbf{F} \, dV
+\]
+
+\section*{Proof}
+The proof employs the divergence theorem, which states
+\[
+\int_{D} \nabla \cdot \mathbf{G} \, dV = \int_{\partial D} \mathbf{G} \cdot d\mathbf{S}
+\]
+for any continuously differentiable vector field \(\mathbf{G}\) on \(D\).
+
+Choosing \(\mathbf{G} = uv\mathbf{F}\), we have
+\[
+\nabla \cdot \mathbf{G} = \nabla \cdot (uv\mathbf{F}) = u (\nabla v \cdot \mathbf{F}) + v (\nabla u \cdot \mathbf{F}) + uv (\nabla \cdot \mathbf{F})
+\]
+Applying the divergence theorem yields
+\[
+\int_{D} \nabla \cdot (uv\mathbf{F}) \, dV = \int_{\partial D} uv\mathbf{F} \cdot d\mathbf{S}
+\]
+Expanding the divergence on the left side gives
+\[
+\int_{D} u (\nabla v \cdot \mathbf{F}) + v (\nabla u \cdot \mathbf{F}) + uv (\nabla \cdot \mathbf{F}) \, dV = \int_{\partial D} uv\mathbf{F} \cdot d\mathbf{S}
+\]
+Rearranging terms provides the formula for integration by parts in multivariable calculus.
+
+\section*{Conclusion}
+This theorem generalizes the concept of integration by parts to the realm of multivariable calculus, demonstrating the interplay between differential and integral calculus in higher dimensions.
+
+\end{document}
