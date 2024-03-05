@@ -9,7 +9,7 @@ This repository contains a LaTeX document that outlines the proof of integration
 
 ## Introduction
 
-The sample document explores the proof of integration by parts for functions defined over a domain in \(\mathbb{R}^3\), utilizing the divergence theorem to relate the flux of a vector field through a surface to the divergence of the field inside the volume bounded by the surface. This mathematical exposition is presented with clarity and precision, adhering to high standards of mathematical notation.
+The sample document explores the proof of integration by parts for functions defined over a domain in $\(\mathbb{R}^3\)$, utilizing the divergence theorem to relate the flux of a vector field through a surface to the divergence of the field inside the volume bounded by the surface. This mathematical exposition is presented with clarity and precision, adhering to high standards of mathematical notation.
 
 ## How to Compile
 
